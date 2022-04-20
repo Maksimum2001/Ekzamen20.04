@@ -1,0 +1,27 @@
+﻿<Window x:Class="Ekzamen20._04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekzamen20._04"
+        mc:Ignorable="d"
+        Title="Список задач" Background="Orange" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="300*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="stackPanel" Grid.ColumnSpan="2" Grid.RowSpan="2">
+
+            <RadioButton Margin="5" Content="Купить самолёт" />
+            <RadioButton Margin="5" Content="Полететь на луну" />
+            <RadioButton Margin="5" Content="Купить военный билет"  />
+            <RadioButton Margin="5" Content="Сдать экзамен" />
+        </StackPanel>
+    </Grid>
+</Window>
